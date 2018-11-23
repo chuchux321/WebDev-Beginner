@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>Inputs Demo</title>
+</head>
+
+<body>
+
+<h1>Please fill out this form for registration</h1>
+
+<form>
+<p>
+    <label for="First Name">First Name:</label>
+    <input name="First Name" id="First Name" type="text" required>
+
+    <label for="Last Name">Last Name:</label>
+    <input name="Last Name" id="Last Name" type="text" required>
+</p>
+<p>
+    <label for="Male">Male</label>
+    <input name="gender" id="Male" type="radio" value="MALE" required>
+
+    <label for="Female">Female</label>
+    <input name="gender" id="Female" type="radio" value="FEMALE" required>
+
+    <label for="Other">Other</label>
+    <input name="gender" id="Other" type="radio" value="OTHER" required>
+
+</p>
+
+<p>
+    <label for="Email">Email:</label>
+    <input name="Email" id="Email" type="email" required>
+
+    <label for="Password">Password:</label>
+    <input name="Password" id="Password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+
+</p>
+<p>
+    <label for="Birthday" required>Birthday:</label>
+
+    <select name="month" type="month">
+        <option value="0" selected="" disabled="">Month</option>
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+     </select>
+
+    <select name="day" type="day">
+        <option value="0" selected="" disabled="">Day</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+     </select>
+
+     <select name="Year" type="year">
+        <option value="0" selected="" disabled="">Year</option>
+        <option value="1990">1990</option>
+        <option value="2003">2003</option>
+        <option value="3001">3001</option>
+     </select>
+
+</p>
+<p>
+    <label for="I agree to the terms and conditions">I agree to the terms and conditions</label>
+    <input type="checkbox" name="checkbox" id="checkbox" required>
+
+</p>
+
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
